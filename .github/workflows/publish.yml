@@ -22,4 +22,7 @@ jobs:
         run: |
           # logs in
           loginJson='{"name":"githubaction","password":"Theta","company":"Company","branch":""}'
-          curl -X POST https://hackathon.acumatica.com/Theta/entity/auth/login -H "Content-Type: application/JSON" -d $loginJson -i --cookie-jar ./cookies.txt
+          publishProject='{"isMergeWithExistingPackages": false,"isOnlyValidation": false,"isOnlyDbUpdates": false,"isReplayPreviouslyExecutedScripts": false,"projectNames": [ "theta-project" ],"tenantMode": "Current"}'
+          
+          curl -X POST https://hackathon.acumatica.com/Theta/entity/auth/login -H "Content-Type: application/JSON" -d $loginJson -i --cookie-jar cookies.txt
+          curl --location --request POST 'https://hackathon.acumatica.com/Theta/CustomizationApi/publishBegin' --header 'Content-Type: application/json' -d "$publishProject" -i -b cookies.txt
