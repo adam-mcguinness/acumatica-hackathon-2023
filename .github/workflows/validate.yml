@@ -80,7 +80,7 @@ jobs:
       run: |
         #sends file
         base64=$(base64 ./deploy/hackathon.acumatica.theta.zip)
-        projectJson='{"projectLevel":1,"isReplaceIfExists":true,"projectName":"theta-project","projectDescription":"Customization Project for Team Theta","projectContentBase64":"'"$base64"'"}'
+        projectJson='{"projectLevel":1,"isReplaceIfExists":true,"projectName":"test","projectDescription":"Customization Project for Team Theta","projectContentBase64":"'"$base64"'"}'
         curl --location --request POST 'https://hackathon.acumatica.com/Theta/CustomizationApi/Import' --header 'Content-Type: application/json' -d "$projectJson" -i -b ./cookies.txt
     - name: Validate Project
       run:
