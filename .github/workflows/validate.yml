@@ -17,9 +17,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: print files
-        run: dir
-
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v1
 
@@ -40,14 +37,7 @@ jobs:
            DestinationPath = "hackathon.acumatica.theta.zip"
           }
           Compress-Archive @compress
-        
-      - name: print files
-        run: dir
-        
-      - name: print files
-        run: du .
-        shell: bash
-        
+          
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
