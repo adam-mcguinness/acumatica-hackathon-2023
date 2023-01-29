@@ -5,8 +5,8 @@ env:
 
 on:
   push:
-    branches: ["development"]
-    pull_request: ["development"]
+    branches: ["main"]
+    pull_request: ["main"]
 
   workflow_dispatch:
 

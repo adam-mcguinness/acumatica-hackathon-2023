@@ -9,7 +9,7 @@ namespace PX.Objects.SO
 
         #region OrderDesc  
         [PXDBString(Common.Constants.TranDescLength, IsUnicode = true)]
-        [PXUIField(DisplayName = "Order Details Force push", Visibility = PXUIVisibility.SelectorVisible)]
+        [PXUIField(DisplayName = "Description", Visibility = PXUIVisibility.SelectorVisible)]
         public string OrderDesc { get; set; }
         #endregion
     }
