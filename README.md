@@ -1,7 +1,7 @@
 # 2023-Team-Theta
 This is the repository for Team Theta's Hackathon project that was held on January 28th & 29th at the 2023 Summit at the Wynn Hotel in Las Vegas, Nevada.
 
-Github Action leveraging Acumatica's REST API for publishing customizations that were released for [2022 R2](https://help-2022r2.acumatica.com/(W(1))/Wiki/Show.aspx?pageid=7eddb850-0096-41c3-8ea7-14becf6401ff).
+Github Actions leveraging Acumatica's REST API released for [2022 R2](https://help-2022r2.acumatica.com/(W(1))/Wiki/Show.aspx?pageid=7eddb850-0096-41c3-8ea7-14becf6401ff) to build and publish customizations from source for CI/CD integration.
 
 ## REST API
 ### Login
