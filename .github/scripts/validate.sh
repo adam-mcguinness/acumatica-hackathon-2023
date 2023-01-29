@@ -1,7 +1,7 @@
 #!/bin/bash
 
-validateProject='{"isMergeWithExistingPackages": false,"isOnlyValidation": true,"isOnlyDbUpdates": false,"isReplayPreviouslyExecutedScripts": false,"projectNames": [ "test" ],"tenantMode": "Current"}'
-publishProject='{"isMergeWithExistingPackages": false,"isOnlyValidation": false,"isOnlyDbUpdates": false,"isReplayPreviouslyExecutedScripts": false,"projectNames": [ "test" ],"tenantMode": "Current"}'
+validateProject='{"isMergeWithExistingPackages": false,"isOnlyValidation": true,"isOnlyDbUpdates": false,"isReplayPreviouslyExecutedScripts": false,"projectNames": [ "theta-project" ],"tenantMode": "Current"}'
+publishProject='{"isMergeWithExistingPackages": false,"isOnlyValidation": false,"isOnlyDbUpdates": false,"isReplayPreviouslyExecutedScripts": false,"projectNames": [ "theta-project" ],"tenantMode": "Current"}'
 curl --location --request POST 'https://hackathon.acumatica.com/Theta/CustomizationApi/publishBegin' --header 'Content-Type: application/json' -d "$validateProject" -i -b cookies.txt
 
 
